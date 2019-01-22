@@ -1,6 +1,6 @@
 +++
 title = "Gallery"
-template = "mancora.html"
+template = "mancora-gallery.html"
 +++
 
 # Gallery
