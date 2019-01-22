@@ -21,3 +21,13 @@ p {
 ul {
 	margin-top: 1rem;
 }
+
+th {
+	padding: 1rem 1rem 1rem 0rem;
+	text-align: left;
+}
+
+td {
+	padding: 1rem 1rem 1rem 0rem;
+	border-top: 1px solid #ddd;
+}
