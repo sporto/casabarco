@@ -1,6 +1,10 @@
-{% extends "mancora.html" %}
+{% extends "page.html" %}
 
-{% block hero %}
+{% block navigation %}
+	{% include "mancora-navigation.html" %}
+{% endblock navigation %}
+
+{% block content %}
 <h1>Welcome to Casabarco Mancora</h1>
 
 <div id="sliderMancora">
@@ -23,6 +27,29 @@
 	});
 </script>
 
-{% endblock hero %}
+<div class="flex mt-4">
+	<div class="w-2/3 pr-4">
+		{{ page.content | safe }}
+	</div>
+	<div class="w-1/3">
+		<div class="bg-grey-lighter p-4 mb-6">
+			<h3>Current Promotion</h3>
+			<p>Del 1 de Enero al 31 de Marzo del 2019 15% de descuento en todas nuestras habitaciones para residentes en el Peru</p>
+
+			<p>From January 1st  trough March 31 2019 15%  discount on all rooms for residents in Peru</p>
+
+			<p>Reservar en casabarcomancora@gmail.com</p>
+
+			<p>Reservations casabarcomacora@gmail.com</p>
+			</p>
+		</div>
+
+		{% include "mancora-webcam.html" %}
+
+		{% include "trip-advisor.html" %}
+	</div>
+</div>
+
+{% endblock content %}
 
 
