@@ -1,0 +1,28 @@
+{% extends "mancora.html" %}
+
+{% block hero %}
+<h1>Welcome to Casabarco Mancora</h1>
+
+<div id="sliderMancora">
+	<div class="item">
+		<img src="/mancora/slider/001.jpg">
+	</div>
+	<div class="item">
+		<img src="/mancora/slider/002.jpg">
+	</div>
+	<div class="item active">
+		<img src="/mancora/slider/003.jpg">
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#sliderMancora').slick({
+			autoplay: true,
+		});
+	});
+</script>
+
+{% endblock hero %}
+
+
