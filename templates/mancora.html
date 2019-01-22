@@ -1,0 +1,11 @@
+{% extends "page.html" %}
+
+{% block navigation %}
+<nav>
+	<a href="{{ get_url(path="./mancora/index.md") }}">Home</a>
+	<a href="{{ get_url(path="/mancora/gallery") }}">Gallery</a>
+	<a href="{{ get_url(path="/mancora/rates") }}">Rates</a>
+	<a href="{{ get_url(path="/mancora/contact") }}">Contact</a>
+	<a href="{{ get_url(path="/mancora/surf-report") }}">Surf Report</a>
+</nav>
+{% endblock navigation %}
