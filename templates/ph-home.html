@@ -1,0 +1,48 @@
+{% extends "page.html" %}
+
+{% block navigation %}
+	{% include "ph-navigation.html" %}
+{% endblock navigation %}
+
+{% block content %}
+<h1>Welcome to Casabarco Punta Hermosa</h1>
+
+<div id="sliderMancora">
+	<div class="item">
+		<img src="/ph/slider/001.jpg">
+	</div>
+	<div class="item">
+		<img src="/ph/slider/002.jpg">
+	</div>
+	<div class="item active">
+		<img src="/ph/slider/003.jpg">
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#sliderMancora').slick({
+			autoplay: true,
+		});
+	});
+</script>
+
+<div class="flex mt-4">
+	<div class="w-2/3 pr-4">
+		{{ page.content | safe }}
+	</div>
+	<div class="w-1/3">
+		<div class="bg-grey-lighter p-4 mb-6">
+			<p>Reservar en casabarcomancora@gmail.com</p>
+
+			<p>Reservations casabarcomacora@gmail.com</p>
+			</p>
+		</div>
+
+		{% include "trip-advisor.html" %}
+	</div>
+</div>
+
+{% endblock content %}
+
+
