@@ -22,6 +22,10 @@ ul {
 	margin-top: 1rem;
 }
 
+tr:nth-child(even) {
+	background: #FAFAFA;
+}
+
 th {
 	padding: 1rem 1rem 1rem 0rem;
 	text-align: left;
