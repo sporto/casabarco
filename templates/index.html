@@ -4,16 +4,32 @@
 <html>
 <head>
 	<title></title>
+	{% include "head.html" %}
 </head>
 <body>
-	<div>
-		<div>
-			<h2>Mancora</h2>
-			<a href="{{ mancora }}">Go</a>
+	<nav class="p-3 bg-black flex items-center">
+		<img src="/logo-sml.png">
+	</nav>
+	<main class="p-6 pb-20">
+		<h1 class="text-center text-orange-dark">Celebrando 20 años.</h1>
+		<div class="flex items-center justify-center">
+			<div class="flex">
+				<div>
+					<h2 class="mb-2">Mancora</h2>
+					<a href="{{ mancora }}">
+						<img src="/mancora/splash.jpg">
+					</a>
+				</div>
+				<div class="ml-4">
+					<h2 class="mb-2">Punta Hermosa</h2>
+					<a href="{{ mancora }}">
+						<img src="/ph/splash.jpg">
+					</a>
+				</div>
+			</div>
 		</div>
-		<div>
-			<h2>Punta Hermosa</h2>
-		</div>
-	</div>
+	</main>
+
+	{% include "footer.html" %}
 </body>
 </html>
