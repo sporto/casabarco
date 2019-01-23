@@ -1,6 +1,6 @@
 +++
 title = "Surf Report"
-template = "mancora.html"
+template = "ph.html"
 +++
 
 # Surf Report
@@ -10,7 +10,7 @@ You are welcome to embed this code in your website to deliver our latest forecas
 surfers. Please leave this message and all code contained in this section
 as is and unmodified. Thanks - magicseaweed.com -->
            <script type="text/javascript"
-src="http://squid.metcentral.com/jscript/ticketJS.php?spot=412&units=europe&id=1146273398-726418">
+src="http://squid.metcentral.com/jscript/ticketJS.php?spot=419&units=europe&id=1146274132-825387">
          </script>
        <div style="width: 500px; text-align: center; padding-top: 0px"> 
          <div align="center" style="padding-top: 0px;">

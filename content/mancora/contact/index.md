@@ -1,5 +1,5 @@
 +++
-title = "Casabarco Mancora"
+title = "Contact"
 template = "mancora.html"
 +++
 
