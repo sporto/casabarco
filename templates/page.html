@@ -7,11 +7,13 @@
 <body>
 	{% block navigation %}{% endblock navigation %}
 
-	<main class="p-6 pb-20">
-		{% block content %}
-			{{ page.content | safe }}
-		{% endblock content %}
-	</main>
+	<div class="bg-white">
+		<main class="p-6 pb-20 container lg:container mx-auto">
+			{% block content %}
+				{{ page.content | safe }}
+			{% endblock content %}
+		</main>
+	</div>
 
 	{% include "footer.html" %}
 
