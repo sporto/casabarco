@@ -1,12 +1,14 @@
-{% set mancora = get_url(path="./mancora/index.md") %}
-{% set ph = get_url(path="./punta-hermosa/index.md") %}
+{% set mancora = get_url(path="./mancora") %}
+{% set ph = get_url(path="./punta-hermosa") %}
 
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>{% block title %}{{ config.title }}{% endblock title %}</title>
 	{% include "head.html" %}
 </head>
+
 <body>
 	<nav class="p-3 bg-black flex items-center">
 		<img src="/logo-sml.png">
@@ -15,13 +17,11 @@
 		<h1 class="text-center text-orange-dark">Celebrando 20 a&ntildeos.</h1>
 		<div class="flex items-center justify-center mt-4">
 			<div class="md:flex">
-				<a href="{{ mancora }}" 
-					class="no-underline p-3">
+				<a href="{{ mancora }}" class="no-underline p-3">
 					<h2 class="mt-0 mb-2">Mancora</h2>
 					<img src="/mancora/splash.jpg">
 				</a>
-				<a href="{{ ph }}" 
-					class="ml-4 no-underline p-3">
+				<a href="{{ ph }}" class="ml-4 no-underline p-3">
 					<h2 class="mt-0 mb-2">Punta Hermosa</h2>
 					<img src="/ph/splash.jpg">
 				</a>
@@ -31,4 +31,5 @@
 
 	{% include "footer.html" %}
 </body>
+
 </html>
