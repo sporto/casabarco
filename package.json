@@ -1,0 +1,22 @@
+{
+  "name": "casabarco",
+  "version": "1.0.0",
+  "description": "Install Zola:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sporto/casabarco.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sporto/casabarco/issues"
+  },
+  "homepage": "https://github.com/sporto/casabarco#readme",
+  "devDependencies": {
+    "netlify-cli": "^2.17.0"
+  }
+}

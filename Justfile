@@ -5,4 +5,4 @@ build:
 	zola build
 
 deploy: build
-	netlify deploy --dir=public --prod
+	npx netlify deploy --dir=public --prod
