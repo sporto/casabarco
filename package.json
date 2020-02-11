@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/sporto/casabarco#readme",
   "devDependencies": {
-    "netlify-cli": "^2.17.0"
+    "netlify-cli": "^2.32.0"
   }
 }
