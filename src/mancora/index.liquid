@@ -1,0 +1,60 @@
+---
+layout: default.liquid
+---
+{% include "mancora-navigation.html" %}
+<main class="p-6 pb-20">
+	<h1 class="font-semibold">Welcome to Casabarco Mancora</h1>
+
+	<div class="mt-2" id="sliderMancora">
+		<div class="item">
+			<img src="/assets/mancora/slider/001.jpg">
+		</div>
+		<div class="item">
+			<img src="/assets/mancora/slider/002.jpg">
+		</div>
+		<div class="item active">
+			<img src="/assets/mancora/slider/003.jpg">
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#sliderMancora').slick({
+				autoplay: true,
+			});
+		});
+	</script>
+
+	<div class="flex justify-center pt-8 pb-8">
+		<div class="max-w-3xl">
+			<p>Blessed with great weather all year around Mancora is one of the most beautiful beaches in Peru. Casabarco is the perfect place to come and relax, enjoy the Mancora nightlife or go surfing. Casabarco offers you the best of Mancora.</p>
+			<div class="grid grid-cols-2 mt-4">
+				<ul>
+					<li>8 rooms</li>
+					<li>A/C in all rooms</li>
+					<li>Safe deposit box in each room</li>
+					<li>Wireless internet</li>
+					<li>Direct TV in the Lobby</li>
+				</ul>
+				<ul>
+					<li>Bar</li>
+					<li>Snacks</li>
+					<li>Check-in: 2:00pm Check-out: 12pm</li>
+					<li>Credit cards: American Express, VISA, Mastercard, Dinners</li>
+				</ul>
+			</div>
+			<div class="mt-8">
+				<div class="grid grid-cols-2 mt-4">
+					{% include "mancora-webcam.html" %}
+					<div class="flex items-center justify-center bg-gray-100">
+						{% include "trip-advisor.html" %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="/assets/slick/slick.min.js"></script>
+</main>
+
+{% include "footer.html" %}

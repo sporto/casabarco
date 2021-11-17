@@ -1,0 +1,8 @@
+
+source: "./src"
+site:
+  title: Casabarco
+  description: Casabarco
+  base_url: http://casabarco.com
+posts:
+  rss: rss.xml
