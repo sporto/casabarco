@@ -1,17 +1,18 @@
 ---
-layout: mancora.liquid
-title: Welcome
+layout: default.liquid
+title: Welcome to Casabarco Mancora
 ---
+{% include "mancora-navigation.html" %}
 
-<div class="mt-2" id="sliderMancora">
+<div id="sliderMancora">
 	<div class="item">
-		<img src="/assets/mancora/slider/001.jpg">
+		<img src="/assets/mancora/slider/001.jpg" class="w-full">
 	</div>
 	<div class="item">
-		<img src="/assets/mancora/slider/002.jpg">
+		<img src="/assets/mancora/slider/002.jpg" class="w-full">
 	</div>
 	<div class="item active">
-		<img src="/assets/mancora/slider/003.jpg">
+		<img src="/assets/mancora/slider/003.jpg" class="w-full">
 	</div>
 </div>
 
@@ -25,7 +26,8 @@ title: Welcome
 
 <div class="flex justify-center pt-8 pb-8">
 	<div class="max-w-3xl">
-		<p>Blessed with great weather all year around Mancora is one of the most beautiful beaches in Peru. Casabarco is the perfect place to come and relax, enjoy the Mancora nightlife or go surfing. Casabarco offers you the best of Mancora.</p>
+		<h1 class="text-3xl font-semibold">{{ page.title }}</h1>
+		<p class="mt-8">Blessed with great weather all year around Mancora is one of the most beautiful beaches in Peru. Casabarco is the perfect place to come and relax, enjoy the Mancora nightlife or go surfing. Casabarco offers you the best of Mancora.</p>
 		<div class="grid grid-cols-2 mt-4 text-gray-600">
 			<ul>
 				<li>8 rooms</li>
@@ -53,3 +55,5 @@ title: Welcome
 </div>
 
 <script type="text/javascript" src="/assets/slick/slick.min.js"></script>
+
+{% include "footer.html" %}
