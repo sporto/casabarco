@@ -1,5 +1,5 @@
-serve:
-	zola serve
+dev:
+	cobalt serve
 
 build:
 	zola build

@@ -1,0 +1,40 @@
+---
+layout: default.liquid
+title: Welcome to Casabarco Punta Hermosa
+---
+{% include "ph-navigation.html" %}
+
+{% include "ph-slider.html" %}
+
+<div class="flex justify-center pt-8 pb-8 bg-white">
+	<div class="max-w-3xl">
+		<h1 class="text-3xl font-semibold">{{ page.title }}</h1>
+		<p class="mt-8">Casabarco Punta Hermosa offers you best facilities for a relaxing holiday just 40km south from Lima.</p>
+		<div class="grid grid-cols-2 mt-4 text-gray-600">
+			<ul>
+				<li>25 rooms</li>
+				<li>Cable TV</li>
+				<li>Wireless internet</li>
+				<li>Restaurant and bar</li>
+				<li>Laundry valet</li>
+			</ul>
+			<ul>
+				<li>Safe deposit box in each room</li>
+				<li>Fax, copying</li>
+				<li>Room service 8am-10pm</li>
+				<li>Check-in: 2:00pm Check-out: 12pm</li>
+				<li>Credit cards: American Express, VISA, Mastercard, Dinners</li>
+			</ul>
+		</div>
+		<div class="mt-8">
+			<div class="grid grid-cols-2 mt-4">
+
+				<div class="flex items-center justify-center bg-gray-100">
+					{% include "trip-advisor.html" %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% include "footer.html" %}
