@@ -1,4 +1,5 @@
 .DS_Store
+_site
 /public
 .netlify/state.json
 # Local Netlify folder
