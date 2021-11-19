@@ -2,7 +2,7 @@ dev:
 	cobalt serve
 
 build:
-	zola build
+	cobalt build
 
 deploy: build
-	npx netlify deploy --dir=public --prod
+	npx netlify deploy --dir=_site --prod

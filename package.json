@@ -1,7 +1,7 @@
 {
   "name": "casabarco",
   "version": "1.0.0",
-  "description": "Install Zola:",
+  "description": "Casabarco",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/sporto/casabarco#readme",
   "devDependencies": {
-    "netlify-cli": "^2.32.0"
+    "netlify-cli": "^7.0"
   }
 }
