@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html>
 	{% include "head.html" %}
-	<body class="bg-gray-600">
+	<body class="bg-sky-200">
 		{% include "ph-navigation.html" %}
-		<main class="p-6 pb-20 flex justify-center bg-white">
-			<div class="max-w-3xl">
-				{% include "page-title.liquid" title: page.title %}
+		<main class="flex justify-center py-8 bg-white">
+			<div class="max-w-3xl px-4 space-y-4">
 				{{ page.content }}
 			</div>
 		</main>
 		{% include "footer.html" %}
-		<script src="/assets/lightbox.min.js"></script>
 	</body>
 </html>

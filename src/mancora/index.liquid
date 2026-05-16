@@ -1,36 +1,59 @@
 ---
-layout: default.liquid
-title: Welcome to Casabarco Mancora
+layout: mancora.liquid
+title: Casabarco Mancora
 ---
-{% include "mancora-navigation.html" %}
 
 <div>
 	<img src="/assets/mancora/slider/001.jpg" class="w-full">
 </div>
 
+{% include "page-title.liquid" title: "Welcome to Casabarco Mancora" %}
 
-<div class="flex justify-center py-8 bg-white">
-	<div class="max-w-3xl px-4 space-y-4">
-		<h1 class="text-2xl font-semibold">{{ page.title }}</h1>
-		<p>Blessed with great weather all year around Mancora is one of the most beautiful beaches in Peru. Casabarco is the perfect place to come and relax, enjoy the Mancora nightlife or go surfing. Casabarco offers you the best of Mancora.</p>
-		<h2 class="text-lg font-semibold">About</h2>
+<p>Blessed with great weather all year around Mancora is one of the most beautiful beaches in Peru. Casabarco is the perfect place to come and relax, enjoy the Mancora nightlife or go surfing. Casabarco offers you the best of Mancora.</p>
 
-		<ul class="list-disc list-inside md:grid grid-cols-2">
-			<li>8 rooms</li>
-			<li>A/C in all rooms</li>
-			<li>Safe deposit box in each room</li>
-			<li>Wireless internet</li>
-			<li>Direct TV in the Lobby</li>
-			<li>Bar</li>
-			<li>Snacks</li>
-			<li>Check-in: 2:00pm Check-out: 12pm</li>
-			<li>Credit cards: American Express, VISA, Mastercard, Dinners</li>
-		</ul>
+{% include "page-subtitle.liquid" title: "About Us" %}
 
-		<div class="flex justify-center">
-			{% include "mancora-webcam.html" %}
-		</div>
-	</div>
+
+<ul class="list-disc list-inside md:grid grid-cols-2">
+	<li>8 rooms</li>
+	<li>A/C in all rooms</li>
+	<li>Safe deposit box in each room</li>
+	<li>Wireless internet</li>
+	<li>Direct TV in the Lobby</li>
+	<li>Bar</li>
+	<li>Snacks</li>
+	<li>Check-in: 2:00pm Check-out: 12pm</li>
+	<li>Credit cards: American Express, VISA, Mastercard, Dinners</li>
+</ul>
+
+{% include "page-subtitle.liquid" title: "Find Us" %}
+
+<div>
+	<p>
+		Casabarco Mancora
+	</p>
+	<p>
+		Las Pocitas<br />
+		Mancora<br />
+		Piura - Peru<br />
+	</p>
+</div>
+<div>
+	<p class="font-semibold">
+	+51 981 298 246
+	</p>
+	<p class="font-semibold">
+	(+51 73) 794 461
+	</p>
+</div>
+<div>
+	<p class="font-semibold">
+		<a href="mailto:casabarcomancora@gmail.com" class="underline">
+			casabarcomancora@gmail.com
+		</a>
+	</p>
 </div>
 
-{% include "footer.html" %}
+<div>
+	<iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;om=0&amp;s=AARTsJoPOEMfots9qYW_pBNGHIDLAwKpTw&amp;msa=0&amp;msid=118095820405331246651.000443ff6b8ffb5dd55ff&amp;ll=-9.015302,-75.761719&amp;spn=20.722148,26.367188&amp;z=5&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;om=0&amp;msa=0&amp;msid=118095820405331246651.000443ff6b8ffb5dd55ff&amp;ll=-9.015302,-75.761719&amp;spn=20.722148,26.367188&amp;z=5&amp;source=embed" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+</div>
