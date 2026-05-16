@@ -1,23 +1,19 @@
-name: 'Deploy to Netlify'
+name: "Deploy to Netlify"
 
 on:
-  release:
-    types: ['published']
+    release:
+        types: ["published"]
 
 jobs:
-  # build:
-  #   name: 'Build'
-  #   steps:
-
-
-  deploy:
-    name: 'Deploy'
-    steps:
-      - uses: actions/checkout@v1
-      - uses: jsmrcaga/action-netlify-deploy@master
-        with:
-          build_directory: '_site'
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_DEPLOY_MESSAGE: "Prod deploy v${{ github.ref }}"
-          NETLIFY_DEPLOY_TO_PROD: true
+    deploy:
+        name: "Deploy"
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - uses: jsmrcaga/action-netlify-deploy@v2.0.0
+              with:
+                  build_directory: "_site"
+                  NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+                  NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+                  NETLIFY_DEPLOY_MESSAGE: "Prod deploy v${{ github.ref }}"
+                  NETLIFY_DEPLOY_TO_PROD: true
